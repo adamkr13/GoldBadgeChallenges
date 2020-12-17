@@ -1,0 +1,12 @@
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\01_KomodoCafeConsole\obj\Debug\01_KomodoCafeConsole.csprojAssemblyReference.cache
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\01_KomodoCafeConsole\obj\Debug\01_KomodoCafeConsole.csproj.CoreCompileInputs.cache
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\01_KomodoCafeConsole\bin\Debug\GoldBadgeConsoleApplication.exe.config
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\01_KomodoCafeConsole\bin\Debug\GoldBadgeConsoleApplication.exe
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\01_KomodoCafeConsole\bin\Debug\GoldBadgeConsoleApplication.pdb
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\01_KomodoCafeConsole\bin\Debug\01_KomodoCafeRepo.dll
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\01_KomodoCafeConsole\bin\Debug\01_KomodoCafeRepo.pdb
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\01_KomodoCafeConsole\obj\Debug\01_KomodoCafeConsole.csproj.CopyComplete
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\01_KomodoCafeConsole\obj\Debug\GoldBadgeConsoleApplication.exe
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\01_KomodoCafeConsole\obj\Debug\GoldBadgeConsoleApplication.pdb
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\01_KomodoCafeConsole\bin\Debug\00_ValidationMethods.dll
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\01_KomodoCafeConsole\bin\Debug\00_ValidationMethods.pdb

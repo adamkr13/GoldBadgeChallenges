@@ -1,0 +1,6 @@
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\00_ValidationMethods\bin\Debug\00_ValidationMethods.dll
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\00_ValidationMethods\bin\Debug\00_ValidationMethods.pdb
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\00_ValidationMethods\obj\Debug\00_ValidationMethods.csprojAssemblyReference.cache
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\00_ValidationMethods\obj\Debug\00_ValidationMethods.csproj.CoreCompileInputs.cache
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\00_ValidationMethods\obj\Debug\00_ValidationMethods.dll
+C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\00_ValidationMethods\obj\Debug\00_ValidationMethods.pdb
