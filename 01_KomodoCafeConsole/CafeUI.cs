@@ -25,11 +25,11 @@ namespace _01_KomodoCafeConsole
         private void PoppySeedData()
         {
             var nothingBurger = new MenuItem("Nothing Burger", "This item is completely lacking in any substance.", new List<string>() { "air - a bunch or nothing" }, 0.99);
-            var panGalacticGargleBlaster = new MenuItem("Pan Galactic Gargle Blaster", "Its effects are similar to 'having your brains smashed out by a slice of lemon wrapped round a large gold brick.'", new List<string>() { "one bottle of Ol' Janx Spirit, one measure of water from the seas of Santraginus V, three cubes of Arcturan Mega-gin, four litres of Fallian marsh gas, a measure of Qualactin Hypermint extract, the tooth of an Algolian Suntiger, a sprinkle of Zamphuor, an olive" }, 9.99);
-            var doublemeatMedley = new MenuItem("Doublemeat Medley", "This item defies description.", new List<string>() { "a pure beefy patty above the mid-bun, a slice of processed chicken product below the mid-bun, pickles, and the secret ingredient." }, 5.99);
+            var panGalacticGargleBlaster = new MenuItem("Pan Galactic Gargle Blaster", "Its effects are similar to 'having your brains smashed out by a slice of lemon wrapped round a large gold brick.'", new List<string>() { "one bottle of Ol' Janx Spirit", "one measure of water from the seas of Santraginus V", "three cubes of Arcturan Mega-gin", "four litres of Fallian marsh gas", "a measure of Qualactin Hypermint extract", "the tooth of an Algolian Suntiger", "a sprinkle of Zamphuor", "an olive" }, 9.99);
+            var doublemeatMedley = new MenuItem("Doublemeat Medley", "This item defies description.", new List<string>() { "a pure beefy patty above the mid-bun", "a slice of processed chicken product below the mid-bun", "pickles", "the secret ingredient." }, 5.99);
             var dryWhiteToast = new MenuItem("Dry White Toast", "This is just dry white toast.", new List<string>() { "No butter or jam - just dry toast." }, 1.98);
             var soylentGreen = new MenuItem("Soylent Green", "Soylent Green is people", new List<string>() { "people" }, 19.73);
-            var escargot = new MenuItem("Escargot", "Slippery little suckers.", new List<string>() { "snails" }, 44.99);
+            var escargot = new MenuItem("Escargot", "Slippery little suckers.", new List<string>() { "snails", "butter", "salt." }, 44.99);
             _menuItemsRepo.AddItemToMenu(nothingBurger);
             _menuItemsRepo.AddItemToMenu(panGalacticGargleBlaster);
             _menuItemsRepo.AddItemToMenu(doublemeatMedley);
@@ -165,7 +165,7 @@ namespace _01_KomodoCafeConsole
         {
             foreach (var ingredient in menuItem.ListOfIngredients)
             {
-                Console.Write(ingredient);
+                Console.Write($"{ingredient}, ");
             }
             Console.WriteLine();
         }

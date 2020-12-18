@@ -37,14 +37,12 @@ namespace _02_KomodoClaimsConsole
         private bool Menu()
         {
             Console.Clear();
-            Console.WriteLine("Welcome to the Komodo Insurance Claim Management Menu. Press any key to continue...");
-            Console.ReadKey();
-            Console.Clear();
+            Console.WriteLine("Welcome to the Komodo Insurance Claim Management Menu.\n\n");
             Console.WriteLine("Choose a menu item:\n\n" +
                 "1. See all claims\n\n" +
                 "2. Take care of next claim\n\n" +
                 "3. Enter a new claim\n\n" +
-                "0. Exit");
+                "0. Exit\n");
 
             switch (Console.ReadLine())
             {
@@ -80,7 +78,7 @@ namespace _02_KomodoClaimsConsole
 
         private void DisplayClaim(Claim claim)
         {
-            Console.WriteLine($"{claim.ClaimID}\t\t{claim.ClaimType}\t{claim.Description}\t\t${claim.ClaimAmount}\t{claim.DateOfIncident.ToShortDateString()}\t{claim.DateOfClaim.ToShortDateString()}\t{claim.IsValid}");
+            Console.WriteLine($"{claim.ClaimID,-23}{claim.ClaimType}\t{claim.Description}\t\t${claim.ClaimAmount}\t{claim.DateOfIncident.ToShortDateString()}\t{claim.DateOfClaim.ToShortDateString()}\t{claim.IsValid}");
         }
 
         private void DealWithNextClaim()
@@ -121,7 +119,7 @@ namespace _02_KomodoClaimsConsole
 
         private void CreateNewClaim()
         {
-            Console.Clear();            
+            Console.Clear();
 
             //Type of claim
             Console.WriteLine("Enter the number for the type of claim:\n" +
@@ -130,26 +128,43 @@ namespace _02_KomodoClaimsConsole
                 "3. Theft\n" +
                 "4. Other\n");
 
-            string intAsString = Validation.IntFromStringValidation();            
-            TypeOfClaim type = (TypeOfClaim)int.Parse(intAsString);            
+            int typeAsInt = -1;
+            bool keepRunning = true;
+
+            while (keepRunning)
+            {
+                string intAsString = Validation.IntFromStringValidation();
+                typeAsInt = int.Parse(intAsString);
+
+                if (typeAsInt <= 4 && typeAsInt >= 1)
+                {
+                    keepRunning = false;
+                }
+                else
+                {
+                    Console.WriteLine("Please enter the number for one of the given options.");
+                }
+            }
+
+            TypeOfClaim type = (TypeOfClaim)typeAsInt;
 
             Console.WriteLine("\nEnter a claim description:");
-            string description = Console.ReadLine();            
+            string description = Console.ReadLine();
 
             Console.WriteLine("\nEnter the amount of the claim in dollars: $");
             string doubleAsString = Validation.DoubleFromStringValidation();
-            double claimAmount = double.Parse(doubleAsString);            
+            double claimAmount = double.Parse(doubleAsString);
 
             Console.WriteLine("\nEnter the date of the incident (mm/dd/yyyy):");
             string incidentDateAsString = Validation.DateFromStringValidation();
             DateTime incidentDate = DateTime.Parse(incidentDateAsString);
-           
+
             Console.WriteLine("\nEnter the date of the claim (mm/dd/yyyy)");
             string claimDateAsString = Validation.DateFromStringValidation();
             DateTime claimDate = DateTime.Parse(claimDateAsString);
 
             Claim newClaim = new Claim(type, description, claimAmount, incidentDate, claimDate);
             _claimQueue.AddClaimToQueue(newClaim);
-        }        
+        }
     }
 }
