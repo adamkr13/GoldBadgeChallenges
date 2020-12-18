@@ -68,7 +68,7 @@ namespace _02_KomodoClaimsConsole
         {
             Console.Clear();
             var allClaims = _claimQueue.GetAllClaims();
-            Console.WriteLine("\nClaim ID \tType\tDescription\t\t\tAmount\tDateOfIncident\tDateOfClaim\tIsValid");
+            Console.WriteLine("\nClaim ID  Type\t  Description\t\t\tAmount\t     DateOfIncident\tDateOfClaim\t  IsValid");
             foreach (var claim in allClaims)
             {
                 DisplayClaim(claim);
@@ -78,7 +78,7 @@ namespace _02_KomodoClaimsConsole
 
         private void DisplayClaim(Claim claim)
         {
-            Console.WriteLine($"{claim.ClaimID,-23}{claim.ClaimType}\t{claim.Description}\t\t${claim.ClaimAmount}\t{claim.DateOfIncident.ToShortDateString()}\t{claim.DateOfClaim.ToShortDateString()}\t{claim.IsValid}");
+            Console.WriteLine($"{claim.ClaimID,-10}{claim.ClaimType, -8}{claim.Description, -30}${claim.ClaimAmount, -12}{claim.DateOfIncident.ToShortDateString(), -19}{claim.DateOfClaim.ToShortDateString(), -18}{claim.IsValid}");
         }
 
         private void DealWithNextClaim()
@@ -92,7 +92,7 @@ namespace _02_KomodoClaimsConsole
                 $"Amount:\t${claim.ClaimAmount}\n\n" +
                 $"DateOfIncident:\t{claim.DateOfIncident.ToShortDateString()}\n\n" +
                 $"DateOfClaim:\t{claim.DateOfClaim.ToShortDateString()}\n\n" +
-                $"IsValid\t{claim.IsValid}\n\n\n" +
+                $"IsValid:\t{claim.IsValid}\n\n\n" +
                 $"Do you want to deal with this claim now (y/n)?");
 
             RemoveNextClaim();
@@ -145,7 +145,6 @@ namespace _02_KomodoClaimsConsole
                     Console.WriteLine("Please enter the number for one of the given options.");
                 }
             }
-
             TypeOfClaim type = (TypeOfClaim)typeAsInt;
 
             Console.WriteLine("\nEnter a claim description:");
