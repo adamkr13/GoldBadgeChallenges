@@ -1,6 +1,0 @@
-C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\02_KomodoClaimsRepo\bin\Debug\02_KomodoClaimsRepo.dll
-C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\02_KomodoClaimsRepo\bin\Debug\02_KomodoClaimsRepo.pdb
-C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\02_KomodoClaimsRepo\obj\Debug\02_KomodoClaimsRepo.csprojAssemblyReference.cache
-C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\02_KomodoClaimsRepo\obj\Debug\02_KomodoClaimsRepo.csproj.CoreCompileInputs.cache
-C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\02_KomodoClaimsRepo\obj\Debug\02_KomodoClaimsRepo.dll
-C:\AKR ElevenFiftyProjects\GoldBadgeConsoleApplication\02_KomodoClaimsRepo\obj\Debug\02_KomodoClaimsRepo.pdb
